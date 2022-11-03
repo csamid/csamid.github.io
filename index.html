@@ -1,0 +1,450 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Samid Ceballos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="src\main.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pb-0">
+        <div class="container-fluid my-container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link ps-0 active" href="index.html">Home</a>
+                </li>
+            </ul>
+
+            <!-- toogle btn for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#reg-modal"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar link items -->
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#featured-work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doodles.html">Doodles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- my nav modal -->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content modal-opacity">
+                <!-- nav modal header -->
+                <div class="modal-header my-modal-color">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <!-- nav modal body -->
+                <div class="modal-body my-modal-color nav-modal-padding">
+                    <div class="container">
+                        <div>
+                            <a class="nav-link text-center py-4" href="#featured-work">Work</a>
+                            <a class="nav-link text-center py-4" href="about.html">About</a>
+                            <a class="nav-link text-center py-4" href="doodles.html">Doodles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- intro section -->
+    <section id="intro" class="d-flex justify-content-center align-items-center">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+
+                <!-- text is centered for sm screens and then left aligned for md and above-->
+                <div class="col-md-6 text-center text-lg-start">
+
+                    <div class="text-white h1 pb-2">Hey There! I'm Samid - A Mechanical Engineer from LA.</div>
+                    <div class="text-white h4 py-2">Interested in haptics and bio-inspired design and
+                        control.
+                    </div>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-6 col-lg-4 text-center text-md-start">
+                            <a class="nav-link py-2 text-md-center text-lg-start"
+                                href="mailto:samidceb@gmail.com">samidceb@gmail.com</a>
+                        </div>
+                        <div class="col-lg-8 d-none d-lg-block">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 text-center d-none d-lg-block">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- featured work section -->
+    <section id="featured-work">
+        <div class="container-lg py-5">
+            <div class="row justify-content-center py-4">
+                <div class="h2 col-md-6 text-center text-lg-start text-white">
+                    Featured Work
+                </div>
+                <div class="col-md-6 col-lg-4 text-center d-none d-lg-block">
+                </div>
+            </div>
+
+            <!-- my work 1-2 -->
+            <div class="row justify-content-center align-items-center">
+
+                <!-- work 1 -->
+                <div class="col-md-9 col-lg-5 pb-4">
+                    <!-- project card is the modal trigger -->
+                    <div type="button" class="project-card" data-bs-toggle="modal" data-bs-target="#work1-modal">
+                        <div class="image-div d-flex justify-content-center align-items-center">
+                            <img class="my-image-1" src="assets\RSCA2022.jpg" alt="my-poster">
+                        </div>
+                        <div class="project-overlay">
+                            <div class="row justify-content-center mt-3 ms-lg-3">
+                                <div class="col-12 text-center text-lg-start">
+                                    <div class="project-location">California State University, Long Beach
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center text-lg-start">
+                                    <div class="project-title">Hand Grasp Assessment Grip-Load Interface</div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--work 2 -->
+                <div class="col-md-9 col-lg-5 pb-4">
+                    <div type="button" class="project-card" data-bs-toggle="modal" data-bs-target="#work2-modal">
+                        <div class="image-div d-flex justify-content-center align-items-center">
+                            <img class="my-image-2" src="assets\SeniorDesign.jpg" alt="scuffer">
+                        </div>
+                        <div class="project-overlay">
+                            <div class="row justify-content-center mt-3 ms-lg-3">
+                                <div class="col-12 text-center text-lg-start">
+                                    <div class="project-location w-100">California State University, Long Beach
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center text-lg-start">
+                                    <div class="project-title">Scuffer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- my work 3-4 -->
+            <div class="row justify-content-center">
+                <!-- work 3 -->
+                <div class="col-md-9 col-lg-5 pb-4">
+                    <!-- project card is the modal trigger -->
+                    <div type="button" class="project-card" data-bs-toggle="modal" data-bs-target="#work3-modal">
+                        <div class="image-div d-flex justify-content-center align-items-center">
+                            <img class="my-image-3" src="assets\UM.jpg" alt="um-srop">
+                        </div>
+                        <div class="project-overlay">
+                            <div class="row justify-content-center mt-3 ms-lg-3">
+                                <div class="col-12 text-center text-lg-start">
+                                    <div class="project-location w-100">University of Michigan</div>
+                                </div>
+                                <div class="col-12 text-center text-lg-start">
+                                    <div class="project-title">Leg 2 Design Optimization</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- work 4 -->
+                <div class="col-md-9 col-lg-5 pb-4">
+                    <div type="button" class="project-card" data-bs-toggle="modal" data-bs-target="#work4-modal">
+                        <div class="image-div d-flex justify-content-center align-items-center">
+                            <img class="my-image-4" src="assets\knob2.png" alt="knob-device">
+                        </div>
+                        <div class="project-overlay">
+                            <div class="row justify-content-center mt-3 ms-lg-3">
+                                <div class="col-12 text-center text-lg-start">
+                                    <div class="project-location">
+                                        California State University, Long Beach
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center text-lg-start">
+                                    <div class="project-title">Hand Grasp Assessment Knob Device</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+
+    <div class="masthead" style="background-image: url('assets/footer_bg.svg'); background-color:  #212936">
+        <div class="color-overlay d-flex justify-content-center align-items-center">
+            <div class="container-lg">
+                <div class="row justify-content-center">
+                    <div class="h4 col-md-6 text-center text-lg-start text-white">
+                        Get In Touch! ↓
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-center d-none d-lg-block">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center text-lg-start">
+                        <a class="footer-email py-2 text-md-center text-lg-start"
+                            href="mailto:samidceb@gmail.com">samidceb@gmail.com</a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 text-center d-none d-lg-block">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-lg-6 text-center text-lg-start pt-3">
+                        <p class="copyrighto text-white lead mb-0">
+                            Made with marginally stable amount of coffee © 2022 Samid Ceballos
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 text-center text-lg-end pt-3">
+                        <a class="copyrighto footer-links lead pe-4"
+                            href="assets\files\Samid Ceballos Resume.pdf">Resume</a>
+                        <a class="copyrighto footer-links lead pe-4"
+                            href="https://www.linkedin.com/in/samid-ceballos/">LinkedIn</a>
+                        <a class="copyrighto footer-links lead" href="https://github.com/csamid">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- work 1 modal -->
+    <div class="modal fade" id="work1-modal" tabindex="-1" aria-labelledby="work1-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body modal-body-bg">
+                    <div class="container-fluid ">
+                        <div class="row">
+                            <div class="col">
+                                <!-- button div -->
+                                <div class="text-end mb-4 my-col">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- img div -->
+                                <div class="d-flex justify-content-center align-items-start">
+                                    <img class="my-image-modal-1" src="assets\RSCA2022.jpg" alt="my-poster">
+                                </div>
+                                <!-- padding div -->
+                                <div class="col my-col mt-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="modal-location">California State University, Long Beach</div>
+                                <div class="modal-name mb-4">Hand Grasp Assessment Grip-Load Interface</div>
+                                <div class="modal-description mb-3">Synchronous coordination of grip force (G) and
+                                    load force and load force (L) is needed to prevent object slippage or breakage. As a
+                                    NIH BUILD Scholar, I redesigned an interface to measure G and L for evaluation and
+                                    rehabilitative training of individuals with hand impairment, such as stroke
+                                    survivors. The redesigned interface consists of a device acting as the object to
+                                    manipulate, a brace for wrist adjustability, and a display for visual feedback to
+                                    the user.</div>
+                                <!-- <div class="text-end mb-2">
+                                    <button class="btn btn-outline-light"> See more </button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work 2 modal -->
+    <div class="modal fade" id="work2-modal" tabindex="-1" aria-labelledby="work2-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body modal-body-bg">
+                    <div class="container-fluid ">
+                        <div class="row">
+                            <div class="col">
+                                <!-- button div -->
+                                <div class="text-end mb-4 my-col">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- img div -->
+                                <div class="d-flex justify-content-center align-items-start">
+                                    <img class="my-image-modal-2" src="assets\SeniorDesign.jpg" alt="scuffer">
+                                </div>
+                                <!-- padding div -->
+                                <div class="col my-col mt-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="modal-location">California State University, Long Beach</div>
+                                <div class="modal-name mb-4">Scuffer</div>
+                                <div class="modal-description mb-3">For my senior capstone project my team developed
+                                    Scuffer, a low-cost quadruped. Aimed at lowering the entry to engage in robotics for
+                                    future CSULB students, Scuffer is centered around a Arduino Micro with a 3D printed
+                                    structure. As the control systems lead, I taught the basics of
+                                    Arduino coding, facilitated group literature reviews, and lead all control
+                                    integration.</div>
+                                <!-- <div class="text-end mb-2">
+                                    <button class="btn btn-outline-light"> See more </button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work 3 modal -->
+    <div class="modal fade" id="work3-modal" tabindex="-1" aria-labelledby="work3-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body modal-body-bg">
+                    <div class="container-fluid ">
+                        <div class="row">
+                            <div class="col">
+                                <!-- button div -->
+                                <div class="text-end mb-4 my-col">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- img div -->
+                                <div class="d-flex justify-content-center align-items-start">
+                                    <img class="my-image-modal-3" src="assets\UM.jpg" alt="leg2">
+                                </div>
+                                <!-- padding div -->
+                                <div class="col my-col mt-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="modal-location">University of Michigan</div>
+                                <div class="modal-name mb-4">Leg 2 Design Optimization</div>
+                                <div class="modal-description mb-3">Leg 2 is a powered knee-ankle prosthetic leg from
+                                    the Locomotor Control Systems Lab at UM. For the Summer of 2021, I optimized the
+                                    design of Leg 2 for experiments with a new continuous phase-varying impedance
+                                    controller. This involved redesigning various 3d printed parts and the remote
+                                    control of a treadmill and mocap software.</div>
+                                <!-- <div class="text-end mb-2">
+                                    <button class="btn btn-outline-light"> See more </button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work 4 modal -->
+    <div class="modal fade" id="work4-modal" tabindex="-1" aria-labelledby="work4-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body modal-body-bg">
+                    <div class="container-fluid ">
+                        <div class="row">
+                            <div class="col">
+                                <!-- button div -->
+                                <div class="text-end mb-4 my-col">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- img div -->
+                                <div class="d-flex justify-content-center align-items-start">
+                                    <img class="my-image-modal-4" src="assets\knob2.png" alt="knob-device">
+                                </div>
+                                <!-- padding div -->
+                                <div class="col my-col mt-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="modal-location">California State University, Long Beach</div>
+                                <div class="modal-name mb-4">Hand Grasp Assessment Knob Device</div>
+                                <div class="modal-description mb-3">Hand Impaired individuals struggle with activities
+                                    of daily living, such as opening a jar. We developed the knob device to measure hand
+                                    forces and torques for evaluation and rehabilitative training. I worked on
+                                    integrating force-sensing resistors (FSRs), a torque sensor, and a motor for varying
+                                    haptic feedback.</div>
+                                <!-- <div class="text-end mb-2">
+                                    <button class="btn btn-outline-light"> See more </button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- <script>
+        $("a.nav-link").on("click", function () {
+            $("a.nav-link.active").removeClass("active");
+            $(this).addClass("active");
+        });
+    </script> -->
+
+
+</body>
+
+</html>
